@@ -112,8 +112,8 @@ func main() {
 	if len(os.Args)<4{
 		fmt.Println("Usage:bdown <URL Pattern> <Folder Pattern> <File Name Pattern> [Batch number or char]")
 		fmt.Println("  Example:")
-		fmt.Println("    bdown \"http://www.baidu.com/\\1/\\2\" \"\\1\" \"\\2.html\" a-z:3 1-100:3")
-		fmt.Println("    bdown \"http://www.baidu.com/\\1/\\2\" \"\\1\" \"\\2.html\" A-Z:3 1-100:3")
+		fmt.Println("    bdown \"http://github.com/\\1/\\2\" \"\\1\" \"\\2.html\" a-z:3 1-100:3")
+		fmt.Println("    bdown \"http://github.com/\\1/\\2\" \"\\1\" \"\\2.html\" A-Z:3 1-100:3")
 		return
 	}
 	loopArgs(os.Args[1],os.Args[2],os.Args[3],0,os.Args[4:])
