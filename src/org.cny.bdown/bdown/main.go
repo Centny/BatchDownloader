@@ -17,7 +17,7 @@ func chandl(uri string,tpath string,fname string){
 	}
 	running++
 	go download(uri,tpath,fname,&running,pchain)
-	fmt.Println("processing ",running)
+	// fmt.Println("processing ",running)
 }
 func download(uri string,tpath string,fname string,ri *int,c chan int) {
 	defer func(c chan int){
